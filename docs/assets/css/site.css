@@ -254,6 +254,18 @@ button, .btn { font-family: inherit; }
 .media--board video {
   object-fit: contain;
 }
+.media--dark {
+  background: #070708;
+}
+.media--tall {
+  min-height: 0;
+  aspect-ratio: 3 / 4;
+  background: #0a0a09;
+}
+.media--tall img,
+.media--tall video {
+  object-fit: contain;
+}
 .media-cap {
   margin: 10px 0 0;
   font-size: 12px;
