@@ -40,9 +40,6 @@
   });
 
   var KEY = "theme";
-  function systemTheme() {
-    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-  }
   function storedTheme() {
     try {
       var value = localStorage.getItem(KEY);
@@ -53,7 +50,7 @@
   function currentTheme() {
     var attr = document.documentElement.getAttribute("data-theme");
     if (attr === "dark" || attr === "light") return attr;
-    return storedTheme() || systemTheme();
+    return storedTheme() || "light";
   }
   function paintToggles(theme) {
     var next = theme === "dark" ? "Light" : "Dark";
@@ -79,10 +76,4 @@
       applyTheme(currentTheme() === "dark" ? "light" : "dark", true);
     });
   });
-  if (window.matchMedia) {
-    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (event) {
-      if (storedTheme()) return;
-      applyTheme(event.matches ? "dark" : "light", false);
-    });
-  }
 })();
