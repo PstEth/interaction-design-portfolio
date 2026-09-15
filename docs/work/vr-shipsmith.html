@@ -26,19 +26,25 @@
         <p class="label">Project 02  ·  2026</p>
         <h1 class="title">VR Shipsmith Simulator</h1>
         <p class="lede">Reconstructing a historical craft experience through spatial interaction.</p>
+        <dl class="meta-row">
+          <div><dt>Role</dt><dd>Interaction Designer · 3D</dd></div>
+          <div><dt>Duration</dt><dd>Studio project</dd></div>
+          <div><dt>Tools</dt><dd>Unity · Blender · VR</dd></div>
+          <div><dt>Team</dt><dd>Group 15</dd></div>
+          <div><dt>Platform</dt><dd>Headset · Spatial</dd></div>
+        </dl>
       </div>
     </section>
     <section class="section section--inverse" style="padding-top:0">
       <div class="wrap">
-        <figure class="media media--hero">
-          <video src="../images/vr-hero.mp4" muted loop playsinline></video>
-          <img src="../images/vr-hero.jpg" alt="VR workshop environment">
+        <figure class="media media--hero media--cinematic">
+          <img src="../images/vr-hero.png" alt="Interior of the VR shipsmith workshop">
           <div class="media__ph">
             <div class="media__cross"></div>
-            <strong>vr-hero.jpg or vr-hero.mp4</strong>
-            <small>Workshop environment / headset view</small>
+            <strong>vr-hero.png</strong>
           </div>
         </figure>
+        <p class="media-cap">The workshop as a place: forge, anvil, bench, and the door back to the yard.</p>
       </div>
     </section>
 
@@ -47,6 +53,11 @@
         <p class="label">Context</p>
         <h2 class="h1">A workshop that no longer exists, rebuilt as a place you can stand in.</h2>
         <p class="body">Early-1800s shipbuilding and blacksmithing were spatial crafts: heat, weight, distance, and sequence. Documentation records them as images and text. This project asks what happens when the user is placed inside the process — not in front of a description of it.</p>
+        <figure class="media media--wide media--board" style="margin-top:32px">
+          <img src="../images/vr-title.png" alt="Forging the Industrial Revolution — project title board">
+          <div class="media__ph"><strong>vr-title.png</strong></div>
+        </figure>
+        <p class="media-cap">Studio brief: IxD Sem 5 · VR &amp; Building 3D Worlds · Group 15. The world is the argument.</p>
       </div>
     </section>
 
@@ -78,10 +89,32 @@
           <span class="chip">Receive feedback</span><span class="flow__arrow">→</span>
           <span class="chip">Explore</span>
         </div>
+        <figure class="media media--wide media--board" style="margin-top:32px">
+          <img src="../images/vr-gameplay.png" alt="The gameplay loop: heat, shape, weld, connect, repeat">
+          <div class="media__ph"><strong>vr-gameplay.png</strong></div>
+        </figure>
+        <p class="media-cap">Heat → shape → weld → connect → repeat. Skill determines the result; the objective is to learn how a chain is made, not only to finish it.</p>
       </div>
     </section>
 
     <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <p class="label">Environment</p>
+        <h2 class="h2">The shop has to be readable from the yard and from the hands.</h2>
+        <figure class="media media--hero media--cinematic">
+          <img src="../images/vr-unity.png" alt="Unity scene of the shipsmith workshop from the yard, with an anchor in the foreground">
+          <div class="media__ph"><strong>vr-unity.png</strong></div>
+        </figure>
+        <p class="media-cap">Outside: timber shed, open doors, light from the forge. The chain and anchor announce what this place makes.</p>
+        <figure class="media media--wide media--photo" style="margin-top:24px">
+          <img src="../images/vr-tools.png" alt="Blacksmith tools laid out on the workbench">
+          <div class="media__ph"><strong>vr-tools.png</strong></div>
+        </figure>
+        <p class="media-cap">Inside: tongs, hammers, and stock wait on the bench. Tools are found by looking, not by a menu.</p>
+      </div>
+    </section>
+
+    <section class="section section--muted">
       <div class="wrap">
         <p class="label">Environment wireframe · overhead</p>
         <h2 class="h2">Forge, anvil, tools, fire, and the body in plan.</h2>
@@ -99,11 +132,16 @@
       </div>
     </section>
 
-    <section class="section section--muted">
+    <section class="section">
       <div class="wrap">
-        <p class="label">Interaction wireframes</p>
-        <h2 class="h2">Gaze, grasp, resistance, response.</h2>
-        <div class="ix-grid">
+        <p class="label">Interaction</p>
+        <h2 class="h1">Gaze, grasp, resistance, response.</h2>
+        <figure class="media media--hero media--cinematic">
+          <img src="../images/vr-forge.png" alt="Two-handed VR forging at the crucible with tongs and a glowing bar">
+          <div class="media__ph"><strong>vr-forge.png</strong></div>
+        </figure>
+        <p class="media-cap">Two-handed work at the fire. Heat is visible; timing is in the hands, not on a HUD.</p>
+        <div class="ix-grid" style="margin-top:32px">
           <article class="state"><h3>Looking</h3><p>Gaze highlight on object. No grab yet. Hands idle.</p></article>
           <article class="state"><h3>Selecting</h3><p>Confirm via dwell or trigger. Outline tightens.</p></article>
           <article class="state"><h3>Picking up</h3><p>Object parents to hand. Weight suggested by motion.</p></article>
@@ -114,7 +152,7 @@
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--muted">
       <div class="wrap">
         <p class="label">VR interaction model</p>
         <div class="flow">
@@ -128,7 +166,7 @@
       </div>
     </section>
 
-    <section class="section section--muted">
+    <section class="section">
       <div class="wrap">
         <p class="label">Technical pipeline</p>
         <div class="flow">
@@ -139,36 +177,40 @@
           <span class="chip">Final experience</span>
         </div>
         <p class="body" style="margin-top:24px">A linear making process: model historically, assemble spatially, then design the verbs the body can perform.</p>
+        <figure class="media media--wide media--photo" style="margin-top:28px">
+          <img src="../images/vr-unity.png" alt="Unity editor with the shipsmith scene, hierarchy, and lighting setup">
+          <div class="media__ph"><strong>vr-unity.png</strong></div>
+        </figure>
+        <p class="media-cap">Built in Unity: scene assembly, lighting, and interaction volumes around a historically modelled shop.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section--muted">
       <div class="wrap">
         <p class="label">Final experience</p>
         <h2 class="h1">The shop as a place, not a scene.</h2>
         <div class="gallery">
-          <figure class="media media--square">
-            <img src="../images/vr-workshop.jpg" alt="Workshop">
-            <div class="media__ph"><strong>vr-workshop.jpg</strong><small>Workshop</small></div>
+          <figure class="media media--square media--cinematic">
+            <img src="../images/vr-workshop.png" alt="Workshop interior with forge, lantern, and workbench">
+            <div class="media__ph"><strong>vr-workshop.png</strong><small>Workshop</small></div>
           </figure>
-          <figure class="media media--square">
-            <img src="../images/vr-forge.jpg" alt="Forge">
-            <div class="media__ph"><strong>vr-forge.jpg</strong><small>Forge</small></div>
+          <figure class="media media--square media--cinematic">
+            <img src="../images/vr-forge.png" alt="Forging at the crucible">
+            <div class="media__ph"><strong>vr-forge.png</strong><small>Forge</small></div>
           </figure>
         </div>
         <div class="gallery gallery--3" style="margin-top:16px">
-          <figure class="media media--square">
-            <img src="../images/vr-tools.jpg" alt="Tools">
-            <div class="media__ph"><strong>vr-tools.jpg</strong><small>Tools</small></div>
+          <figure class="media media--square media--photo">
+            <img src="../images/vr-tools.png" alt="Tools on the workbench">
+            <div class="media__ph"><strong>vr-tools.png</strong><small>Tools</small></div>
           </figure>
-          <figure class="media media--square">
-            <img src="../images/vr-blacksmith.jpg" alt="Blacksmith interaction">
-            <div class="media__ph"><strong>vr-blacksmith.jpg</strong><small>Blacksmith interaction</small></div>
+          <figure class="media media--square media--cinematic">
+            <img src="../images/vr-blacksmith.png" alt="Two-handed blacksmith interaction">
+            <div class="media__ph"><strong>vr-blacksmith.png</strong><small>Blacksmith interaction</small></div>
           </figure>
-          <figure class="media media--square">
-            <video src="../images/vr-gameplay.mp4" muted loop playsinline></video>
-            <img src="../images/vr-gameplay.jpg" alt="VR gameplay">
-            <div class="media__ph"><strong>vr-gameplay.mp4</strong><small>VR gameplay</small></div>
+          <figure class="media media--square media--board">
+            <img src="../images/vr-gameplay.png" alt="Gameplay loop board">
+            <div class="media__ph"><strong>vr-gameplay.png</strong><small>Gameplay loop</small></div>
           </figure>
         </div>
       </div>

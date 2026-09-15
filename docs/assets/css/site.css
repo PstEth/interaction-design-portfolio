@@ -245,6 +245,15 @@ button, .btn { font-family: inherit; }
 .media--photo video {
   object-fit: contain;
 }
+.media--board {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  background: #f3ead8;
+}
+.media--board img,
+.media--board video {
+  object-fit: contain;
+}
 .media-cap {
   margin: 10px 0 0;
   font-size: 12px;
