@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VR Shipsmith Simulator — Your Name</title>
+  <meta name="description" content="Reconstructing a historical craft experience through spatial interaction.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="wrap">
+    <div class="case-nav">
+      <a href="../index.html">←  All work</a>
+      <span>VR Shipsmith Simulator</span>
+      <a href="blume-color.html">Next  →</a>
+    </div>
+  </div>
+
+  <main id="content">
+    <section class="section section--inverse">
+      <div class="wrap">
+        <p class="label">Project 02  ·  2026</p>
+        <h1 class="title">VR Shipsmith Simulator</h1>
+        <p class="lede">Reconstructing a historical craft experience through spatial interaction.</p>
+      </div>
+    </section>
+    <section class="section section--inverse" style="padding-top:0">
+      <div class="wrap">
+        <figure class="media media--hero">
+          <video src="../images/vr-hero.mp4" muted loop playsinline></video>
+          <img src="../images/vr-hero.jpg" alt="VR workshop environment">
+          <div class="media__ph">
+            <div class="media__cross"></div>
+            <strong>vr-hero.jpg or vr-hero.mp4</strong>
+            <small>Workshop environment / headset view</small>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Context</p>
+        <h2 class="h1">A workshop that no longer exists, rebuilt as a place you can stand in.</h2>
+        <p class="body">Early-1800s shipbuilding and blacksmithing were spatial crafts: heat, weight, distance, and sequence. Documentation records them as images and text. This project asks what happens when the user is placed inside the process — not in front of a description of it.</p>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="wrap">
+        <p class="label">Why VR?</p>
+        <h2 class="h2">The medium had to match the kind of knowledge.</h2>
+        <div class="flow">
+          <span class="chip">Traditional documentation</span><span class="flow__arrow">→</span>
+          <span class="chip">Watching a demonstration</span><span class="flow__arrow">→</span>
+          <span class="chip">Interacting with the process</span><span class="flow__arrow">→</span>
+          <span class="chip">Immersive VR experience</span>
+        </div>
+        <p class="body" style="margin-top:24px">VR was chosen because the objective is not to show historical information. It is to let someone experience spatial processes — reach, heat, timing, and the layout of a working shop — with their own body.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Experience map</p>
+        <h2 class="h1">A spatial journey, not a click path.</h2>
+        <div class="flow">
+          <span class="chip">Enter workshop</span><span class="flow__arrow">→</span>
+          <span class="chip">Observe</span><span class="flow__arrow">→</span>
+          <span class="chip">Locate tools</span><span class="flow__arrow">→</span>
+          <span class="chip">Pick up material</span><span class="flow__arrow">→</span>
+          <span class="chip">Heat / forge</span><span class="flow__arrow">→</span>
+          <span class="chip">Perform task</span><span class="flow__arrow">→</span>
+          <span class="chip">Receive feedback</span><span class="flow__arrow">→</span>
+          <span class="chip">Explore</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:0">
+      <div class="wrap">
+        <p class="label">Environment wireframe · overhead</p>
+        <h2 class="h2">Forge, anvil, tools, fire, and the body in plan.</h2>
+        <div class="plan">
+          <div class="plan__nav"></div>
+          <div class="zone" style="left:6%;top:14%;width:16%;height:24%">Forge</div>
+          <div class="zone" style="left:6%;top:44%;width:12%;height:20%">Fire</div>
+          <div class="zone" style="left:28%;top:28%;width:16%;height:24%">Anvil</div>
+          <div class="zone" style="left:50%;top:14%;width:14%;height:32%">Tools</div>
+          <div class="zone" style="left:68%;top:22%;width:22%;height:26%">Workbench</div>
+          <div class="zone" style="left:32%;top:68%;width:12%;height:14%">Player</div>
+          <div class="zone" style="left:24%;top:56%;width:20%;height:10%">Interaction zone</div>
+          <p class="plan__legend">Dashed = navigation · Solid = interaction volumes · Player starts facing the anvil</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="wrap">
+        <p class="label">Interaction wireframes</p>
+        <h2 class="h2">Gaze, grasp, resistance, response.</h2>
+        <div class="ix-grid">
+          <article class="state"><h3>Looking</h3><p>Gaze highlight on object. No grab yet. Hands idle.</p></article>
+          <article class="state"><h3>Selecting</h3><p>Confirm via dwell or trigger. Outline tightens.</p></article>
+          <article class="state"><h3>Picking up</h3><p>Object parents to hand. Weight suggested by motion.</p></article>
+          <article class="state"><h3>Forging</h3><p>Repeated strike. Heat + timing as feedback.</p></article>
+          <article class="state"><h3>Object feedback</h3><p>Glow, spark, or sag depending on state.</p></article>
+          <article class="state"><h3>Task complete</h3><p>Audio + world change. Shop remains explorable.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">VR interaction model</p>
+        <div class="flow">
+          <span class="chip">USER</span><span class="flow__arrow">→</span>
+          <span class="chip">HEAD / GAZE</span><span class="flow__arrow">→</span>
+          <span class="chip">HAND / CONTROLLER</span><span class="flow__arrow">→</span>
+          <span class="chip">VIRTUAL OBJECT</span><span class="flow__arrow">→</span>
+          <span class="chip">SYSTEM RESPONSE</span>
+        </div>
+        <p class="body" style="margin-top:24px">Input is embodied. The system never assumes a cursor. Gaze finds, hands confirm, the world answers.</p>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="wrap">
+        <p class="label">Technical pipeline</p>
+        <div class="flow">
+          <span class="chip">Blender</span><span class="flow__arrow">→</span>
+          <span class="chip">3D environment / assets</span><span class="flow__arrow">→</span>
+          <span class="chip">Unity</span><span class="flow__arrow">→</span>
+          <span class="chip">VR interaction</span><span class="flow__arrow">→</span>
+          <span class="chip">Final experience</span>
+        </div>
+        <p class="body" style="margin-top:24px">A linear making process: model historically, assemble spatially, then design the verbs the body can perform.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Final experience</p>
+        <h2 class="h1">The shop as a place, not a scene.</h2>
+        <div class="gallery">
+          <figure class="media media--square">
+            <img src="../images/vr-workshop.jpg" alt="Workshop">
+            <div class="media__ph"><strong>vr-workshop.jpg</strong><small>Workshop</small></div>
+          </figure>
+          <figure class="media media--square">
+            <img src="../images/vr-forge.jpg" alt="Forge">
+            <div class="media__ph"><strong>vr-forge.jpg</strong><small>Forge</small></div>
+          </figure>
+        </div>
+        <div class="gallery gallery--3" style="margin-top:16px">
+          <figure class="media media--square">
+            <img src="../images/vr-tools.jpg" alt="Tools">
+            <div class="media__ph"><strong>vr-tools.jpg</strong><small>Tools</small></div>
+          </figure>
+          <figure class="media media--square">
+            <img src="../images/vr-blacksmith.jpg" alt="Blacksmith interaction">
+            <div class="media__ph"><strong>vr-blacksmith.jpg</strong><small>Blacksmith interaction</small></div>
+          </figure>
+          <figure class="media media--square">
+            <video src="../images/vr-gameplay.mp4" muted loop playsinline></video>
+            <img src="../images/vr-gameplay.jpg" alt="VR gameplay">
+            <div class="media__ph"><strong>vr-gameplay.mp4</strong><small>VR gameplay</small></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Reflection</p>
+        <div class="lessons">
+          <article class="lesson">
+            <p class="label">Lesson 01</p>
+            <h3>Space is the interface</h3>
+            <p>Layout, reach, and sightlines did more work than any menu. The shop had to be readable with the body, not a HUD.</p>
+          </article>
+          <article class="lesson">
+            <p class="label">Lesson 02</p>
+            <h3>Embodiment needs resistance</h3>
+            <p>Picking something up is not a click. Weight, heat, and repetition had to be suggested even when physics were simplified.</p>
+          </article>
+          <article class="lesson">
+            <p class="label">Lesson 03</p>
+            <h3>VR fails when it explains</h3>
+            <p>If the user is reading, they have left the century. Instruction lives in the world: glow, sound, the next tool in reach.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="wrap">
+    <hr class="rule">
+    <div class="next">
+      <p class="label">Next project</p>
+      <a href="blume-color.html">Blume Color  →</a>
+    </div>
+    <footer class="footer">
+      <span>© <span data-year></span> · Your Name</span>
+      <span>Interaction Design</span>
+    </footer>
+  </div>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>

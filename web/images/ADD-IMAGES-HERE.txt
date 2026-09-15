@@ -1,0 +1,30 @@
+Drop your files into this folder using these exact names.
+JPG, PNG, WEBP, or MP4 all work if the name matches.
+
+HOME
+  home-gym.jpg
+  home-vr.jpg          (or home-vr.mp4)
+  home-blume.jpg
+
+AI GYM MIRROR
+  gym-hero.jpg
+  gym-ui-tracking.jpg
+  gym-ui-cue.jpg
+  gym-ui-summary.jpg
+
+VR SHIPSMITH
+  vr-hero.jpg          (or vr-hero.mp4)
+  vr-workshop.jpg
+  vr-forge.jpg
+  vr-tools.jpg
+  vr-blacksmith.jpg
+  vr-gameplay.mp4      (or vr-gameplay.jpg)
+
+BLUME COLOR
+  blume-hero.jpg
+  blume-workspace.jpg
+  blume-compare.jpg
+  blume-export.jpg
+
+Optional portrait on About:
+  about-portrait.jpg
