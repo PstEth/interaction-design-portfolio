@@ -29,22 +29,22 @@
         <dl class="meta-row">
           <div><dt>Role</dt><dd>Interaction Designer / UI</dd></div>
           <div><dt>Duration</dt><dd>12 weeks</dd></div>
-          <div><dt>Tools</dt><dd>Figma · Python · CV</dd></div>
+          <div><dt>Tools</dt><dd>Figma · Python · Computer Vision</dd></div>
           <div><dt>Team</dt><dd>4 — design + eng</dd></div>
-          <div><dt>Platform</dt><dd>iOS · Camera</dd></div>
+          <div><dt>Platform</dt><dd>Web · Camera</dd></div>
         </dl>
       </div>
     </section>
 
     <div class="wrap">
-      <figure class="media media--hero">
-        <img src="../images/gym-hero.jpg" alt="AI Gym Mirror product mockup">
+      <figure class="media media--hero media--photo">
+        <img src="../images/gym-hero.png" alt="AI Gym Mirror tracking a bicep curl with a live skeleton overlay">
         <div class="media__ph">
           <div class="media__cross"></div>
-          <strong>gym-hero.jpg</strong>
-          <small>Product mockup — tracking overlay</small>
+          <strong>gym-hero.png</strong>
         </div>
       </figure>
+      <p class="media-cap">Live tracking. The skeleton turns red when form breaks; a single cue appears on the camera.</p>
     </div>
 
     <section class="section">
@@ -144,7 +144,7 @@
         <h2 class="h2">How the interface answers the body.</h2>
         <div class="states">
           <article class="state"><h3>Correct form</h3><p>Quiet confirmation. No extra UI. A thin edge cue or haptic tick. The workout continues.</p></article>
-          <article class="state"><h3>Incorrect form</h3><p>One spoken or visual cue. Named simply: “knees in.” Disappears when corrected.</p></article>
+          <article class="state"><h3>Incorrect form</h3><p>One cue, in the movement: “Shoulder is swinging forward. Keep your elbow fixed at your side.” The skeleton goes red. It disappears when the body corrects.</p></article>
           <article class="state"><h3>Rep completed</h3><p>Count increments. No celebration. Rhythm stays with the user.</p></article>
           <article class="state"><h3>Set completed</h3><p>Camera recedes. Summary appears only after motion stops.</p></article>
           <article class="state"><h3>Tracking lost</h3><p>Soft pause. Re-alignment silhouette. Never a hard error screen mid-set.</p></article>
@@ -156,18 +156,43 @@
       <div class="wrap">
         <p class="label">High-fidelity interface</p>
         <h2 class="h1">From wireframe to a product you can stand in front of.</h2>
-        <div class="gallery gallery--3">
-          <figure class="media media--wide">
-            <img src="../images/gym-ui-tracking.jpg" alt="Live tracking overlay">
-            <div class="media__ph"><strong>gym-ui-tracking.jpg</strong><small>Live tracking overlay</small></div>
+        <div class="gallery">
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-tracking.png" alt="Incorrect form: red skeleton overlay during a bicep curl">
+            <div class="media__ph"><strong>gym-ui-tracking.png</strong></div>
           </figure>
-          <figure class="media media--wide">
-            <img src="../images/gym-ui-cue.jpg" alt="Form cue state">
-            <div class="media__ph"><strong>gym-ui-cue.jpg</strong><small>Form cue state</small></div>
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-cue.png" alt="FIX FORM panel: shoulder is swinging forward">
+            <div class="media__ph"><strong>gym-ui-cue.png</strong></div>
           </figure>
-          <figure class="media media--wide">
-            <img src="../images/gym-ui-summary.jpg" alt="Session summary">
-            <div class="media__ph"><strong>gym-ui-summary.jpg</strong><small>Session summary</small></div>
+        </div>
+        <p class="media-cap">Incorrect form. Pose is drawn in red. The right rail holds reps, score, and one instruction — not a dashboard of angles.</p>
+        <div class="gallery" style="margin-top:16px">
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-ready.png" alt="Tracking with a quiet white skeleton overlay">
+            <div class="media__ph"><strong>gym-ui-ready.png</strong></div>
+          </figure>
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-history.png" alt="Workout history table">
+            <div class="media__ph"><strong>gym-ui-history.png</strong></div>
+          </figure>
+        </div>
+        <p class="media-cap">When form is quiet, the overlay recedes to white. History appears only after the set — date, exercise, reps, load, duration.</p>
+
+        <h2 class="h2" style="margin-top:56px">System screens built from the same language.</h2>
+        <p class="body">Home, exercise choice, and set complete — generated to match the live product: black canvas, pixel labels, camera first.</p>
+        <div class="gallery gallery--3" style="margin-top:24px">
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-home.png" alt="Home screen: position yourself in the camera">
+            <div class="media__ph"><strong>gym-ui-home.png</strong></div>
+          </figure>
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-select.png" alt="Exercise selection list">
+            <div class="media__ph"><strong>gym-ui-select.png</strong></div>
+          </figure>
+          <figure class="media media--wide media--photo">
+            <img src="../images/gym-ui-complete.png" alt="Set complete with score 99">
+            <div class="media__ph"><strong>gym-ui-complete.png</strong></div>
           </figure>
         </div>
       </div>

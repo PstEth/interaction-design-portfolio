@@ -232,13 +232,17 @@ button, .btn { font-family: inherit; }
   color: var(--secondary);
 }
 .media__ph small { font-size: 11px; }
-.media__cross {
-  width: 48px;
-  height: 48px;
-  margin: 0 auto 8px;
-  background:
-    linear-gradient(var(--line), var(--line)) center/1px 100% no-repeat,
-    linear-gradient(var(--line), var(--line)) center/100% 1px no-repeat;
+.media--photo {
+  background: #0a0a09;
+}
+.media--photo img,
+.media--photo video {
+  object-fit: contain;
+}
+.media-cap {
+  margin: 10px 0 0;
+  font-size: 12px;
+  color: var(--muted);
 }
 
 .meta-row {
