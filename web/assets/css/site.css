@@ -232,8 +232,14 @@ button, .btn { font-family: inherit; }
   color: var(--secondary);
 }
 .media__ph small { font-size: 11px; }
-.media--photo {
-  background: #0a0a09;
+.media--cinematic {
+  min-height: 0;
+  aspect-ratio: 16 / 9;
+  background: #070708;
+}
+.media--cinematic img,
+.media--cinematic video {
+  object-fit: cover;
 }
 .media--photo img,
 .media--photo video {
