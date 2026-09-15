@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Gym Mirror — Your Name</title>
+  <meta name="description" content="Making workout feedback visible, immediate, and actionable.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="wrap">
+    <div class="case-nav">
+      <a href="../index.html">←  All work</a>
+      <span>AI Gym Mirror</span>
+      <a href="vr-shipsmith.html">Next  →</a>
+    </div>
+  </div>
+
+  <main id="content">
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Project 01  ·  2026</p>
+        <h1 class="title">AI Gym Mirror</h1>
+        <p class="lede">Making workout feedback visible, immediate, and actionable.</p>
+        <dl class="meta-row">
+          <div><dt>Role</dt><dd>Interaction Designer / UI</dd></div>
+          <div><dt>Duration</dt><dd>12 weeks</dd></div>
+          <div><dt>Tools</dt><dd>Figma · Python · CV</dd></div>
+          <div><dt>Team</dt><dd>4 — design + eng</dd></div>
+          <div><dt>Platform</dt><dd>iOS · Camera</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <figure class="media media--hero">
+        <img src="../images/gym-hero.jpg" alt="AI Gym Mirror product mockup">
+        <div class="media__ph">
+          <div class="media__cross"></div>
+          <strong>gym-hero.jpg</strong>
+          <small>Product mockup — tracking overlay</small>
+        </div>
+      </figure>
+    </div>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Problem</p>
+        <h2 class="h1">Training without a trainer.</h2>
+        <p class="body">People can follow a workout, but they cannot see their own form. Mistakes stay invisible until they become pain, plateau, or injury. Feedback — if it exists — arrives after the set is already over.</p>
+        <div class="flow" style="margin-top:28px">
+          <span class="chip">User</span><span class="flow__arrow">→</span>
+          <span class="chip">Exercise</span><span class="flow__arrow">→</span>
+          <span class="chip">Incorrect form</span><span class="flow__arrow">→</span>
+          <span class="chip">No immediate feedback</span><span class="flow__arrow">→</span>
+          <span class="chip">Risk / inefficient training</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--inverse">
+      <div class="wrap">
+        <p class="label">Design question</p>
+        <p class="quote">How might we give people useful workout feedback without requiring a personal trainer?</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Research → Insight</p>
+        <h2 class="h1">The interface must stay secondary to the body.</h2>
+        <div class="insights">
+          <article class="insight">
+            <p class="label">01</p>
+            <h3>Users miss subtle posture errors</h3>
+            <p>The body is a poor sensor for small deviations. Feedback has to make the invisible visible — without turning the gym into a dashboard.</p>
+          </article>
+          <article class="insight">
+            <p class="label">02</p>
+            <h3>Feedback belongs in the movement</h3>
+            <p>Post-set summaries arrive too late. Correction only works if it happens during the rep, in the same tempo as the exercise.</p>
+          </article>
+          <article class="insight">
+            <p class="label">03</p>
+            <h3>Too much data breaks flow</h3>
+            <p>Counting angles and showing skeletons competes with the workout. The system should speak in glances, not paragraphs.</p>
+          </article>
+          <article class="insight">
+            <p class="label">04</p>
+            <h3>UI is a supporting actor</h3>
+            <p>The primary object is the body in space. Screens, overlays, and voice must recede the moment form is correct.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="wrap">
+        <p class="label">User flow</p>
+        <h2 class="h2">From camera setup to set review.</h2>
+        <div class="flow">
+          <span class="chip">Open app</span><span class="flow__arrow">→</span>
+          <span class="chip">Select exercise</span><span class="flow__arrow">→</span>
+          <span class="chip">Position camera</span><span class="flow__arrow">→</span>
+          <span class="chip">Start</span><span class="flow__arrow">→</span>
+          <span class="chip">AI tracks</span><span class="flow__arrow">→</span>
+          <span class="chip">Detects form</span><span class="flow__arrow">→</span>
+          <span class="chip">Gives feedback</span><span class="flow__arrow">→</span>
+          <span class="chip">Complete set</span><span class="flow__arrow">→</span>
+          <span class="chip">Review</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Low-fidelity wireframes</p>
+        <h2 class="h1">Seven screens. Grayscale on purpose.</h2>
+        <p class="body">The system is designed around the live camera state, not a content feed. Each screen exists to get the user into — or out of — physical movement with as little interface as possible.</p>
+        <div class="phones" style="margin-top:28px">
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>01 Home</h4><div class="hero-block"></div><div class="block"></div><div class="block"></div><div class="btn-block"></div></div><p class="phone-cap">Home</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>02 Exercise</h4><div class="block"></div><div class="block"></div><div class="block"></div><div class="block"></div></div><p class="phone-cap">Exercise selection</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>03 Camera</h4><div class="hero-block"></div><p>Align silhouette</p><div class="btn-block"></div></div><p class="phone-cap">Camera positioning</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>04 Tracking</h4><div class="hero-block"></div><p>Rep 4 / 8</p><div class="block"></div></div><p class="phone-cap">Exercise tracking</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>05 Feedback</h4><div class="hero-block"></div><p>Knees tracking in</p><p>Keep chest open</p></div><p class="phone-cap">Real-time posture</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>06 Set done</h4><p>8 reps</p><div class="block"></div><div class="btn-block"></div></div><p class="phone-cap">Set completion</p></div>
+          <div><div class="phone"><div class="phone__bar"><span>9:41</span><span>lll</span></div><h4>07 Summary</h4><div class="hero-block"></div><p>Form 82%</p><div class="btn-block"></div></div><p class="phone-cap">Workout summary</p></div>
+        </div>
+        <div class="notes">
+          <p class="note"><b>1</b> Home is a session launcher, not a social feed.</p>
+          <p class="note"><b>2</b> Camera positioning is a first-class screen — tracking quality depends on it.</p>
+          <p class="note"><b>3</b> Live feedback is glanceable: one cue, not a list.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="wrap">
+        <p class="label">Interaction system</p>
+        <h2 class="h2">How the interface answers the body.</h2>
+        <div class="states">
+          <article class="state"><h3>Correct form</h3><p>Quiet confirmation. No extra UI. A thin edge cue or haptic tick. The workout continues.</p></article>
+          <article class="state"><h3>Incorrect form</h3><p>One spoken or visual cue. Named simply: “knees in.” Disappears when corrected.</p></article>
+          <article class="state"><h3>Rep completed</h3><p>Count increments. No celebration. Rhythm stays with the user.</p></article>
+          <article class="state"><h3>Set completed</h3><p>Camera recedes. Summary appears only after motion stops.</p></article>
+          <article class="state"><h3>Tracking lost</h3><p>Soft pause. Re-alignment silhouette. Never a hard error screen mid-set.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">High-fidelity interface</p>
+        <h2 class="h1">From wireframe to a product you can stand in front of.</h2>
+        <div class="gallery gallery--3">
+          <figure class="media media--wide">
+            <img src="../images/gym-ui-tracking.jpg" alt="Live tracking overlay">
+            <div class="media__ph"><strong>gym-ui-tracking.jpg</strong><small>Live tracking overlay</small></div>
+          </figure>
+          <figure class="media media--wide">
+            <img src="../images/gym-ui-cue.jpg" alt="Form cue state">
+            <div class="media__ph"><strong>gym-ui-cue.jpg</strong><small>Form cue state</small></div>
+          </figure>
+          <figure class="media media--wide">
+            <img src="../images/gym-ui-summary.jpg" alt="Session summary">
+            <div class="media__ph"><strong>gym-ui-summary.jpg</strong><small>Session summary</small></div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--inverse">
+      <div class="wrap">
+        <p class="label">Outcome</p>
+        <p class="quote">A camera-based training companion that makes form visible in real time, keeps the interface out of the way, and turns a solo workout into a guided one — without a trainer in the room.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <p class="label">Reflection</p>
+        <div class="lessons">
+          <article class="lesson">
+            <p class="label">Lesson 01</p>
+            <h3>Feedback is a timing problem</h3>
+            <p>The valuable design decision was not what to show, but when to show it. Late information is decoration.</p>
+          </article>
+          <article class="lesson">
+            <p class="label">Lesson 02</p>
+            <h3>Absence is a state</h3>
+            <p>Correct form needed a designed quiet — not a green check that never leaves the screen.</p>
+          </article>
+          <article class="lesson">
+            <p class="label">Lesson 03</p>
+            <h3>Sensing is part of UX</h3>
+            <p>Camera placement, lighting, and body distance are interaction design, not engineering leftovers.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="wrap">
+    <hr class="rule">
+    <div class="next">
+      <p class="label">Next project</p>
+      <a href="vr-shipsmith.html">VR Shipsmith Simulator  →</a>
+    </div>
+    <footer class="footer">
+      <span>© <span data-year></span> · Your Name</span>
+      <span>Interaction Design</span>
+    </footer>
+  </div>
+  <script src="../assets/js/site.js"></script>
+</body>
+</html>
